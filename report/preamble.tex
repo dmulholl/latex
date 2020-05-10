@@ -1,0 +1,93 @@
+% Add support for mathematical equations.
+\usepackage{amsmath}
+
+% Generate dummy text for testing.
+\usepackage{lipsum}
+
+% Use the typographical ruleset for the English language.
+\usepackage[english]{babel}
+
+% Nicer tables.
+\usepackage{booktabs}
+
+% Increase the spacing between table columns.
+\setlength{\tabcolsep}{20pt}
+
+% Add support for bold mathematical symbols: $\bm{X}$.
+\usepackage{bm}
+
+% Add support for links (and urls in references).
+% Dont outline the links themselves.
+\usepackage[hidelinks]{hyperref}
+
+% Add support for the degree symbol.
+\usepackage{gensymb}
+
+% Set root folder for images.
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+
+% Set document margins.
+\usepackage[left=4cm,right=4cm,top=4cm,bottom=4cm]{geometry}
+
+% Customize the font. Palatino with smallcap support.
+\usepackage[sc]{mathpazo}
+\usepackage[T1]{fontenc}
+\usepackage{microtype}
+\linespread{1.25}
+
+% Customize the document title.
+\usepackage{titling}
+%\setlength{\droptitle}{-4\baselineskip}
+\pretitle{\begin{center}\Huge\bfseries}
+\posttitle{\end{center}}
+
+% Skip a full line between paragraphs.
+\usepackage[parfill]{parskip}
+\setlength{\parskip}{1.0\baselineskip plus 2pt}
+
+% Customize figure captions.
+\usepackage[hang,small,labelfont=bf,up,textfont=it,up]{caption}
+\setlength{\abovecaptionskip}{20pt plus 5pt minus 2pt}
+\setlength{\belowcaptionskip}{20pt plus 5pt minus 2pt}
+
+% Enable subfigures.
+\usepackage{subcaption}
+
+% Increase section-title margins: {left}{above}{below}.
+\usepackage{titlesec}
+\titlespacing{\section}{0pt}{36pt}{24pt}
+\titlespacing{\subsection}{0pt}{32pt}{20pt}
+\titlespacing{\subsubsection}{0pt}{28pt}{16pt}
+
+% Tweak vertical spacing above and below equations.
+\AtBeginDocument{
+    % \abovedisplayskip=12pt plus 3pt minus 9pt
+    % \abovedisplayshortskip=0pt plus 3pt
+    % \belowdisplayskip=12pt plus 3pt minus 9pt
+    \belowdisplayshortskip=14pt
+}
+
+% Listings package for code blocks.
+\usepackage{listings}
+\lstset{
+    aboveskip=24pt,
+    belowskip=10pt,
+    basicstyle=\ttfamily\small,
+    xleftmargin=16pt,
+    xrightmargin=16pt,
+    showstringspaces=false,
+}
+
+% Extra formatting options for lists.
+\usepackage{enumitem}
+
+% Add the bibliography to the table of contents.
+% But don't include the toc itself in the toc.
+\usepackage[nottoc]{tocbibind}
+
+% Add support for appendices.
+\usepackage[titletoc]{appendix}
+
+% Remove the constraint that all pages should have the same height.
+% \raggedbottom

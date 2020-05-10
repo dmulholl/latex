@@ -1,0 +1,29 @@
+\documentclass[12pt]{report}
+\input{preamble}
+
+\title{Report Title}
+\author{\\ \textsc{Joe Bloggs}}
+\date{}
+
+\begin{document}
+\maketitle
+
+\include{abstract}
+\include{acknowledgements}
+
+\tableofcontents
+\listoffigures
+\listoftables
+
+\include{chapters/ch1}
+\include{chapters/ch2}
+
+\bibliographystyle{unsrt}
+\bibliography{references}
+
+\begin{appendices}
+    \include{appendices/app1}
+    \include{appendices/app2}
+\end{appendices}
+
+\end{document}
