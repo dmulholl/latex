@@ -61,10 +61,16 @@
 
 % Tweak vertical spacing above and below equations.
 \AtBeginDocument{
-    % \abovedisplayskip=12pt plus 3pt minus 9pt
-    % \abovedisplayshortskip=0pt plus 3pt
-    % \belowdisplayskip=12pt plus 3pt minus 9pt
-    \belowdisplayshortskip=14pt
+    % These spacings are used for equations embedded in a block of text.
+    \setlength\abovedisplayskip{20pt}
+    \setlength\belowdisplayskip{20pt}
+
+    % These spacings are used when the line immediately above the equation is
+    % short - i.e. it ends before the equation begins. They're also used when
+    % the line above the equation is blank - Latex interprets this as a very
+    % short line!
+    \setlength\abovedisplayshortskip{0pt}
+    \setlength\belowdisplayshortskip{14pt}
 }
 
 % Listings package for code blocks.
