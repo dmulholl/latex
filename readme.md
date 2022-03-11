@@ -11,4 +11,4 @@ Over time I gradually developed this pair of simple templates for myself &mdash;
 * [Sample Article][1]
 * [Sample Report][2]
 
-Here's a [real world example][3] of the report template in use.
+Here's a [longer example][3] of the report template in use.
